@@ -1,1 +1,117 @@
 /* Put your style information here! */
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: #eeeeee; */
+}   
+
+.jumbotron {
+    margin-bottom: 0;
+    background-color: #CFEBFF;
+}
+
+.mainbody {
+    max-width: 950px;
+    padding: 0 5rem 0 5rem;
+    background-color: white;
+}
+
+.Content {
+    max-width: 950px;
+    padding-top: 2rem;
+    border-bottom: 1px solid #343a40;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.section {
+    justify-content: center;
+}
+
+.note {
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.pnote {
+    background-color: lemonchiffon;
+    max-width: 300px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.comment {
+    background-color: lemonchiffon;
+    max-width: 650px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+nav .navbar-nav li a{
+    color: white !important;
+}
+
+.p, .problems {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.b {
+    font-size: 1.25rem;
+    font-weight: 1.5rem;
+}
+
+h2 {
+    padding-top: 2rem;
+}
+
+img {
+    border: 5px solid #343a40;
+}
+
+.imgwrapper {
+    padding-bottom: 1rem;
+}
+
+#Hypotheses, #Conclusions {
+    background-color: #CFEBFF;
+}
+
+#oldpage {
+    max-width: 650px;
+    padding: 0.25rem;
+}
+
+.prototype {
+    max-width: 850px;
+    padding: 0.25rem
+}
+
+#styleguide {
+    max-width: 850px;
+}
+
+.probsection {
+    background-color: white;
+    margin: 0.5rem;
+}
+
+#finishedproduct {
+    padding-top: 2rem;
+}
+
+footer {
+    text-align: right;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+}
