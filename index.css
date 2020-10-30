@@ -6,7 +6,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    /* background-color: #eeeeee; */
 }   
 
 .jumbotron {
@@ -66,15 +65,10 @@ nav .navbar-nav li a{
     color: white !important;
 }
 
-.p, .problems {
+.p {
     font-size: 1.25rem;
     padding-top: 0.5rem;
     padding-bottom: 1rem;
-}
-
-.b {
-    font-size: 1.25rem;
-    font-weight: 1.5rem;
 }
 
 h2 {
@@ -88,33 +82,18 @@ img {
 
 .imgwrapper {
     padding-bottom: 1rem;
+    flex-shrink: 1;
+    width: 100%;
 }
 
 #Hypotheses, #Conclusions {
     background-color: #CFEBFF;
 }
 
-#oldpage {
-    max-width: 650px;
-    padding: 0.25rem;
-}
-
-.prototype {
+.absite, .infographic {
     max-width: 850px;
+    width: 100%;
     padding: 0.25rem
-}
-
-#styleguide {
-    max-width: 850px;
-}
-
-.probsection {
-    background-color: white;
-    margin: 0.5rem;
-}
-
-#finishedproduct {
-    padding-top: 2rem;
 }
 
 footer {
@@ -122,3 +101,5 @@ footer {
     padding: 1rem;
     padding-bottom: 0.5rem;
 }
+
+/* * { border: 1px solid red; } */
