@@ -33,6 +33,11 @@ body {
     justify-content: center;
 }
 
+.insidecol {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .note {
     justify-content: center;
     align-items: center;
@@ -41,7 +46,7 @@ body {
 
 .pnote {
     background-color: lemonchiffon;
-    max-width: 300px;
+    max-width: 350px;
     padding: 1rem;
     padding-bottom: 2rem;
     font-size: 1.25rem;
@@ -50,7 +55,7 @@ body {
 
 .comment {
     background-color: lemonchiffon;
-    max-width: 650px;
+    max-width: 450px;
     padding: 1rem;
     padding-bottom: 2rem;
     font-size: 1.25rem;
@@ -63,6 +68,7 @@ nav .navbar-nav li a{
 
 .p, .problems {
     font-size: 1.25rem;
+    padding-top: 0.5rem;
     padding-bottom: 1rem;
 }
 
@@ -73,6 +79,7 @@ nav .navbar-nav li a{
 
 h2 {
     padding-top: 2rem;
+    /* padding-bottom: 1rem; */
 }
 
 img {

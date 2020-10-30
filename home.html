@@ -19,7 +19,7 @@
   <!-- TODO: put your HTML code here! -->
 
   <div class="jumbotron text-center">
-    <h1>An Exercise in A/B Testing</h1>
+    <h1>A Practice in A/B Testing</h1>
   </div>
 
   <!-- NavBar -->
@@ -48,7 +48,7 @@
           and quatitative, from two versions of a website. 
           <br>
           In this project, a simple website was chosen to model an online 
-          shopping experience.
+          cacti store. 
           Two versions of the website were available to the public, with a 50%
           chance of loading either version after navigating to the 
           <a href="https://studio5.herokuapp.com/" 
@@ -72,28 +72,105 @@
     <div class="Content container-fluid" id="Hypotheses">
       <div class="section row">
         <h1>Hypotheses</h1>
-        <div class="p">
+        <!-- <div class="p">
           I chose the menu page of Bagel Gourmet Cafe, a small restaurant in 
           Providence Rhode Island, that truly does sell tasty bagels.
           Below, I have attached a screenshot from the webpage.
-        </div>
+        </div> -->
       </div>
       
-      <div class="section row">
+      <!-- <div class="section row">
         <div class="imgwrapper">
           <img src="bgo menu page screenshot.jpg" id="oldpage" alt="Screenshot of BGO menu page">
         </div> 
-      </div>
+      </div> -->
 
       <div class="section row">
-        <h2>Analysis</h2>
+        <h2>Website Versions</h2>
         <div class="p">
-          Below is a brief summary of design problems I discovered from interacting
-          with the website:
+          For each website, I chose to emphasize a different aspect of the 
+          shopping experience. 
         </div>
       </div>
       
       <div class="section row">
+          <div class="insidecol col">
+            <div class="p">
+              In <b>version A</b>, I emphasized the process of purchasing. 
+              For each item, I put the price at the top of the section in 
+              very large font, and highlighted how many were already in the cart 
+              to the immediate right of the item. 
+              I also moved the cart to the top of the screen, so users could 
+              easily see how many items were in their cart also. 
+              In making these changes, I wanted the user to easily access 
+              and see how much they are paying and how many items they are paying 
+              for. 
+            </div>
+          </div>
+          <!-- <br><br> -->
+          <div class="insidecol col">
+            <div class="p ">
+              In <b>version B</b>, I emphasized the shopping experience.
+              I increased the image size for all the items, increased the size 
+              of the "Add to Cart" button, sort of hid the prices, and placed the 
+              cart at the bottom of the page. 
+              In making these changes, I wanted the user to be more immersed in the 
+              items themselves and thinking about adding that item to their 
+              collection when they "add to cart", and divert attention away from 
+              prices and numbers.
+            </div>
+          </div>
+        
+      </div>
+
+      <div class="section row">
+        <h2>Version A</h2>
+        <div class="p">
+          <div class="imgwrapper">
+            <img src="version A.png" class="prototype" alt="Version A of website">
+          </div> 
+        </div>
+        <h2>Version B</h2>
+        <div class="p">
+          <div class="imgwrapper">
+            <img src="version B.png" class="prototype" alt="Version B of website">
+          </div> 
+        </div>
+      </div>
+
+      <!-- insert screenshots here -->
+
+      <div class="section row">
+        <h2>Hypotheses for Each Metric &#x1f9d0;</h2>
+        <div class="p">
+          <u>Metric 1: Time to Completion</u>
+          <br> 
+          Null Hypothesis: Version A will not lead to a faster time to completion 
+          than Version B.
+          <br>
+          Alternative Hypothesis: Versiona A will lead to a faster time to 
+          completion than Version B.
+          <br>
+          Reasoning: Version A will produce a more seamless experience with 
+          the user by having the important information (cost) easily visible 
+          to the average user that must work around a budget.
+          <br><br>
+          <u>Metric 2: Return Rate</u> 
+          <br>
+          Null Hypothesis: Version A will not lead to a lower return rate
+          than Version B.
+          <br>
+          Alternative Hypothesis: Version A will lead to a lower return rate 
+          than Version B.
+          <br>
+          Reasoning: Version A will lead to an experience that emphasizes the 
+          numbers first, so users will be more conscious of their purchases
+          and less likely to need to go back once they reach the cart, because 
+          there should not be anything surprising to them once they reach it.
+        </div>
+      </div>
+      
+      <!-- <div class="section row">
         <div class="probsection col">
           <h3>Usability</h3>
           <ul class="problems">
@@ -168,14 +245,15 @@
           a seemingly arbitrary set of items, and there is no alternative 
           texts for images.
         </div>
-      </div>
+      </div> -->
 
       <div class="note row">
         <div class="pnote">
-          Note: I also found it a bit humorous that the "We" in the upperleft
-          image is actually text and not a glitch in the image, which 
-          the screenreader revealed while reading the page.
-          This would undoubtedly lead to even more confusion!
+          Aside: Personally, I have always found shopping websites that 
+          obscured the prices to feel almost distrustful. I would take longer 
+          to try to find the price, and also would wonder if making this 
+          purchase was reasonable if it feels like even the company 
+          would like you to forget how much it costs. 
         </div>
       </div>
       
@@ -186,17 +264,19 @@
       <div class="section row">
         <h1>Data Collection</h1>
         <div class="p">
-          While designing my website, the goal was to both address the 
-          issues listed above and also make the website responsive.
-          Therefore, I created 3 versions of each prototype to model: 
-          desktop screens, tablet screens, and mobile phone screens.
+          For this test, the link, which had an equal chance of dispalying 
+          either version A or version B once clicked, was distributed 
+          over two days to over 20 of my peers in the class. 
+          Without knowing which version they received, they played the part 
+          of a typical user and used the site to add $150 worth of cacti 
+          products to their cart.
           <br>
-          Below, I have shown my prototypes with annotations to 
-          indicate the specific problems I hope to address.
+          The data was logged through Heroku, cleaned and organized by hand, 
+          and run through a Python script.
         </div>
       </div>
 
-      <div class="section row">
+      <!-- <div class="section row">
         <h2>Low-Fi Prototypes</h2>
 
         <div class="imgwrapper">
@@ -240,22 +320,17 @@
         <div class="imgwrapper">
           <img src="style guide illustrator-01.jpg" id="styleguide" alt="Style Guide for BGO Menu Page">
         </div> 
-      </div>
+      </div> -->
 
       <div class="note row">
         <div class="comment">
-          Comment: I found that while I was prototyping and creating the 
-          style guide, that my style choices were fluid and continued to change.
-          This is also evident in my final product.
-          <br>
-          For example, I alternated between putting the photo menu on the 
-          right side of the screen versus putting it at the bottom of 
-          the screen for tablet mode.
-          <br>
-          I found prototyping very helpful in giving me the space to think through
-          multiple versions of the design, so that when I was actually building 
-          the website I had backup plans in case the Plan Adid not 
-          turn out as expected.
+          Aside: Having access to these logs also made me realize what kind 
+          of data that the websites I visit must have one me. As I'm sure 
+          many people are familiar with online shopping, especially during 
+          the pandemic, this made me realize what specific numbers 
+          industries may be storing to gain insight on what interfaces 
+          encourage their users to purchase, and to return because they had 
+          a relatively seamless experience the first time.
         </div>
       </div>
     </div>
@@ -265,88 +340,52 @@
         <h1>Conclusions</h1>
       </div>
 
-      <div class="section row">
+      <!-- <div class="section row">
         <div class="p" id="finishedproduct">
           And without further ado: 
           <a href="https://enigmatic-wildwood-19691.herokuapp.com/" 
           target="_blank">the finished product. </a>
         </div>
-      </div>
+      </div> -->
 
       <div class="section row">
-        <h2>Comments</h2>
+        <h2>Takeaways</h2>
         <div class="p">
-          Like I mentioned earlier, there were some changes made to my 
-          final design while I was implementing it.
-          <br><br>
-          First of all, I chose to have a dropdown button for the directory 
-          instead of putting it inside the navbar. I did this because it 
-          allowed me the flexibility of displaying it only on certain 
-          screen sizes, and so that in the navbar users could still click 
-          on menu and be directed to the menu page, instead of only being 
-          able to navigate there through the dropdown menu.
-          <br><br>
-          I also chose to have the photo menu be below the main menu in the iPad 
-          screen, as shown by my tablet low-fi design, because when I was 
-          actually designing the website, it felt a bit cluttered with the 
-          photos on the right column. This was especially true if the 
-          font size was increased.
-          <br><br>
-          Finally, I have a sticky-left side navigation bar, which moves with 
-          you after you scroll down the page. Originally, I only implemented
-          the sticky-left feature. However, when examining the page with 
-          a larger font, the navigation bar did not fit the screen. 
-          Therefore, I researched and implemented a feature to allow the 
-          navigation bar to move to the top of the screen when you scroll down 
-          far enough, allowing it to be fully visible on screens with increased font size.
-        </div>
-      </div>
+          <ul class="takeaways">
+            <li>The sample size of A/B testing is very important in finding 
+              statistically significant results with small changes. 
+              After running this test, I feel like I have a better understanding 
+              of the advantage in resources that big industries have 
+              and how much harder it must be to collect data and improve your 
+              interface using A/B testing when there is low traffic to your site.
+            </li>
+            <li>Using statistical tests allows for a controlled method of 
+              evaluating results. From the data, I would personally have guessed
+              that version A had a lower return rate than version B, since 
+              only 1/3 of people returned to the main page in version A but 
+              1/2 of people returned to the main page in version B. However, 
+              with such a small sample, the p-value was much larger than 
+              0.05, and therefore I could not reject the null hypothesis.
+            </li>
+            <li>A/B testing reveals how metadata can be incredibly revealing 
+              about users and their experience with a website. 
+              For example, just seeing that the same user returned to a 
+              webpage quickly after leaving, or how long it took them to 
+              make their first click on the page actually reveals more than 
+              normal people might expect. 
+              This data is incredibly useful and powerful given how trivial 
+              it may seem at first.
+            </li>
+          </ul>
 
-      <div class="section row">
-        <h2>Accessibility Analysis</h2>
-        <div class="p">
-          One of the goals in redesigning this webpaage was also to make it
-          more accessible. Therefore, I conducted similar tests as I did with 
-          the original webpage to check its accessibility.
           <br><br>
-          Using the WebAIM WAVE test, I found that there were no errors, while 
-          before there were many errors in multiple categories. The test 
-          did give me a warning about the redundancy of my buttons in the 
-          photo menu to say "Click", but after some deliberation, I decided 
-          to keep this description because there were not that many 
-          buttons on the page, on the desktop site this would be the first button 
-          you encounter, and I personally am not familiar with many similar 
-          interfaces and would appreciate the increased learnability of the button.
-          <br><br>
-          I also conducted tests with increased font sizes and changing the 
-          page language using Google Translate. As a result, I chose to enhance
-          the style of my side navigation bar to accomodate screens with 
-          increased font sizes (as mentioned before) and made sure that any 
-          overflow text as a result was still readable and understandable.
-          When the page was translated in a different language, the structure 
-          and hierarchy of the categories were still clear enough that 
-          I felt I could navigate it reasonably well. I noticed the menu 
-          directory played a large rol in this also, along with the horizontal 
-          line markers
-          <br><br>
-          When I tested my website with a screenreader, I was actually surprised
-          to find the screenreader much more helpful. At first, when I had 
-          used the screenreader for the original website, I thought the 
-          screenreader was simply confusing because it would read random 
-          sections of text, such as only "de gallo" in a description that 
-          contained "pico de gallo". However, when I used the screenreader on 
-          my website, I found that it read the website in logical chunks, 
-          likely separated by my div markers. For example, it now read the 
-          entire description of ingredients, instead of just "de gallo", and 
-          also read the prices associated with each size together.
-          The design of this website therefore not only increases visual 
-          readability, but its structure also enhances readability for 
-          screenreaders
+          Thank you for reading &#x2764;
         </div>
       </div>
+        
     </div>
 
-    <div class="Content container-fluid" id="Conclusion">
+    <!-- <div class="Content container-fluid" id="Conclusion">
       <div class="section row">
         <h1>Conclusion</h1>
         <div class="p">
@@ -366,7 +405,7 @@
           Thank you for reading &#x2764;
         </div>
       </div>
-    </div>
+    </div> -->
 
   </div>
 
